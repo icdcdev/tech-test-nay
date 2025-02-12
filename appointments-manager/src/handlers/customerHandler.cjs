@@ -1,4 +1,4 @@
-const CustomerService = require('../services/customerService');
+const CustomerService = require('../services/customerService.cjs');
 
 module.exports.createCustomer = async (event) => {
     try {
@@ -12,7 +12,7 @@ module.exports.createCustomer = async (event) => {
     } catch (error) {
         return {
             statusCode: 500,
-            body: JSON.stringify({ error: error.message }),
+            body: JSON.stringify({ error: error.message })
         };
     }
   };

@@ -20,6 +20,10 @@ org: naycont
 # Check out our docs for more details
 frameworkVersion: '2'
 
+custom:
+  serverless-offline:
+    useChildProcesses: true
+
 provider:
   name: aws
   runtime: nodejs18.x
